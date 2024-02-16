@@ -6,7 +6,6 @@
     <value>Сообщения обмена</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
-  <includeInCommandInterface>true</includeInCommandInterface>
   <content>InformationRegister.сшпИсходящиеСообщения</content>
   <content>InformationRegister.сшпСтатусыИсходящихСообщений</content>
   <content>InformationRegister.сшпСтатусыВходящихСообщений</content>
