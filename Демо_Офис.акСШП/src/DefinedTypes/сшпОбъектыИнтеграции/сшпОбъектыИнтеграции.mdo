@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af6d9486-997a-4b1f-b56f-a49478012799">
+  <producedTypes>
+    <containerType typeId="836af944-dacd-493b-8e2c-3614b6a1a2de" valueTypeId="699a322e-df99-408b-9520-4872eaee61f5"/>
+  </producedTypes>
+  <name>сшпОбъектыИнтеграции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты интеграции</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.сшпСервисыИнтеграции</types>
+  </type>
+</mdclass:DefinedType>

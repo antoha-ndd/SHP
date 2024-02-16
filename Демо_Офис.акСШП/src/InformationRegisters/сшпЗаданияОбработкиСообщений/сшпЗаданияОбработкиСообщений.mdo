@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e5d77fe-540d-4968-b108-a446dbb2403c">
+  <producedTypes>
+    <selectionType typeId="ec96c92a-216c-450e-8d72-95bb3ca2d002" valueTypeId="0feac25e-52cd-442d-9a24-39e42c6302e3"/>
+    <listType typeId="385b0e03-b3be-4af5-bd92-b35c8a0558a4" valueTypeId="adcc6416-1b5c-41c7-8da4-9ba9b154861a"/>
+    <managerType typeId="ed6cb073-eceb-4ead-aeba-6b1cd3296684" valueTypeId="ba7b095b-4110-4ed4-a8e9-09749447ca2d"/>
+    <recordSetType typeId="58f92fcd-8640-4020-b399-f6f2bd8fe481" valueTypeId="aa4c1391-64de-4c42-915a-2246f45fb655"/>
+    <recordKeyType typeId="7d6ac91d-6fc9-452a-87b8-063787cdfcdb" valueTypeId="84dfccdb-3558-4595-b037-fe86b2edd11f"/>
+    <recordType typeId="2b8c2664-5aa8-4d99-8eca-2c07749bbb54" valueTypeId="a3d8e2e1-908c-4419-a41b-4610eb390046"/>
+    <recordManagerType typeId="64564e2c-bc87-4b08-a8e0-5b936d293beb" valueTypeId="013fc3b6-c238-4c4c-9c8a-5d3ec8851627"/>
+  </producedTypes>
+  <name>сшпЗаданияОбработкиСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задания обработки сообщений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="12d4974a-3819-4022-99c5-dbeb7167c765">
+    <name>ИдентификаторЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор задания</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value>                                    </value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

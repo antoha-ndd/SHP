@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b78e5d7-e9c4-4dea-aa23-e01e54bc9d2e">
+  <name>сшпСШП</name>
+  <synonym>
+    <key>ru</key>
+    <value>1С:Шина</value>
+  </synonym>
+  <comment>Сервисная шина предприятия</comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.сшпКартинкаПодсистемы32х32</picture>
+  </picture>
+  <content>Role.сшпОсновнаяРоль</content>
+  <content>Enum.сшпТипыИнтеграции</content>
+  <content>CommonPicture.сшпКартинкаПодсистемы</content>
+  <content>CommonPicture.сшпКартинкаПодсистемы16х16</content>
+  <content>CommonPicture.сшпКартинкаПодсистемы32х32</content>
+  <content>CommonModule.сшпРаботаСКлассамиСервер</content>
+  <content>CommonModule.сшпОбработкаСобытий</content>
+  <content>CommonModule.сшпФункцииРаботыJSON</content>
+  <content>Catalog.сшпКлассыИнтеграции</content>
+  <content>Enum.сшпСтатусыСообщений</content>
+  <content>InformationRegister.сшпОчередьИсходящихСообщений</content>
+  <content>Catalog.сшпИнфосистемы</content>
+  <content>CommonModule.сшпОбщегоНазначения</content>
+  <content>CommonModule.сшпОбщегоНазначенияПовтИсп</content>
+  <content>ScheduledJob.сшпЗапускОбработкиИсходящейОчереди</content>
+  <content>Constant.сшпКоличествоПопытокПередачиОбъекта</content>
+  <content>Catalog.сшпСервисыИнтеграции</content>
+  <content>Catalog.сшпКаналы</content>
+  <content>Constant.сшпКодТекущейИнфосистемы</content>
+  <content>Enum.сшпТипЗапроса</content>
+  <content>ScheduledJob.сшпАктуализироватьСтатусОтправленныхСообщений</content>
+  <content>CommonModule.сшпКомпиляция</content>
+  <content>InformationRegister.сшпОчередьВходящихСообщений</content>
+  <content>IntegrationService.сшпСервисИнтеграцииТест</content>
+  <content>ScheduledJob.сшпЗапускОбработкиВходящейОчереди</content>
+  <content>DefinedType.сшпОбъектыИнтеграции</content>
+  <content>DataProcessor.ТюнсофтРедактированиеJSON</content>
+  <subsystems>СообщенияОбмена</subsystems>
+</mdclass:Subsystem>

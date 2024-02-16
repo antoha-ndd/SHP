@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e08080dd-444d-4126-a2e8-eb9da172d1de">
+  <name>акСШП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аквариус СШП</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <defaultLanguage>Checked</defaultLanguage>
+    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+    <defaultRoles>Extended</defaultRoles>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="762a5f6d-6e6f-4eff-bc92-c78c1ebf3455"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="533ccc17-b8ad-43a1-9c5d-19488990afe9"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="1aae7a52-bb3e-414c-a208-78ba5d79c509"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="94858eec-c067-48ce-98d4-76ed390fe0dc"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="a1255fb2-860a-4e8a-9205-1d33e4278419"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="02c3ae51-189b-4f39-b863-07b866d43e28"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="31aa02c6-9c65-4219-9b96-379ebc751a13"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>сшп</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.16</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultRoles>Role.сшпОсновнаяРоль</defaultRoles>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <compatibilityMode>8.3.23</compatibilityMode>
+  <languages uuid="baf3a4e9-7d85-4ef0-ad4d-73fa547de6a4" extendedConfigurationObject="d5fb342e-0c73-4410-8517-8ce7ee20e8bd">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.сшпСШП</subsystems>
+  <commonPictures>CommonPicture.сшпКартинкаПодсистемы</commonPictures>
+  <commonPictures>CommonPicture.сшпКартинкаПодсистемы16х16</commonPictures>
+  <commonPictures>CommonPicture.сшпКартинкаПодсистемы32х32</commonPictures>
+  <roles>Role.сшпОсновнаяРоль</roles>
+  <commonModules>CommonModule.сшпКомпиляция</commonModules>
+  <commonModules>CommonModule.сшпОбработкаСобытий</commonModules>
+  <commonModules>CommonModule.сшпОбщегоНазначения</commonModules>
+  <commonModules>CommonModule.сшпОбщегоНазначенияПовтИсп</commonModules>
+  <commonModules>CommonModule.сшпРаботаСКлассамиСервер</commonModules>
+  <commonModules>CommonModule.сшпФункцииРаботыJSON</commonModules>
+  <eventSubscriptions>EventSubscription.сшпОбменСсылочныеДанные</eventSubscriptions>
+  <scheduledJobs>ScheduledJob.сшпАктуализироватьСтатусОтправленныхСообщений</scheduledJobs>
+  <scheduledJobs>ScheduledJob.сшпЗапускОбработкиВходящейОчереди</scheduledJobs>
+  <scheduledJobs>ScheduledJob.сшпЗапускОбработкиИсходящейОчереди</scheduledJobs>
+  <scheduledJobs>ScheduledJob.сшпЗапускОтправкиСообщений</scheduledJobs>
+  <definedTypes>DefinedType.сшпОбъектыИнтеграции</definedTypes>
+  <constants>Constant.сшпКодТекущейИнфосистемы</constants>
+  <constants>Constant.сшпКоличествоПопытокПередачиОбъекта</constants>
+  <constants>Constant.сшпОбменСообщениямиВключен</constants>
+  <catalogs>Catalog.сшпИнфосистемы</catalogs>
+  <catalogs>Catalog.сшпКаналы</catalogs>
+  <catalogs>Catalog.сшпКлассыИнтеграции</catalogs>
+  <catalogs>Catalog.сшпСервисыИнтеграции</catalogs>
+  <enums>Enum.сшпСтатусыСообщений</enums>
+  <enums>Enum.сшпТипЗапроса</enums>
+  <enums>Enum.сшпТипыИнтеграции</enums>
+  <enums>Enum.сшпСтатусыЗаданийОбработкиСообщений</enums>
+  <dataProcessors>DataProcessor.ТюнсофтРедактированиеJSON</dataProcessors>
+  <informationRegisters>InformationRegister.сшпОчередьИсходящихСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.сшпОчередьВходящихСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.сшпИсходящиеСообщения</informationRegisters>
+  <informationRegisters>InformationRegister.сшпВходящиеСообщения</informationRegisters>
+  <informationRegisters>InformationRegister.сшпСтатусыИсходящихСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.сшпСтатусыВходящихСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.сшпЗаданияОбработкиСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.сшпСтатусыЗаданийОбработкиСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.сшпПакетыИсходящихСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.сшпПакетыВходящихСообщений</informationRegisters>
+  <integrationServices>IntegrationService.сшпСервисИнтеграцииТест</integrationServices>
+</mdclass:Configuration>

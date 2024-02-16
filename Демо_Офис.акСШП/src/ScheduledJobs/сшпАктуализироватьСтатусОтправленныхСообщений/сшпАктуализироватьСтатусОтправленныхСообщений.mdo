@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a98629a4-4384-4a1d-b310-489334961b00">
+  <name>сшпАктуализироватьСтатусОтправленныхСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка доставки сообщений в 1С Шину</value>
+  </synonym>
+  <comment>Проверяем наличие сообщения  в системной очереди и если его в ней нет, меняем статус сообщения с ОжиданиеОтправки на Отправлено</comment>
+  <methodName>CommonModule.сшпОбработкаСобытий.АктуализироватьСтатусПоОтправленнымСообщениям</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

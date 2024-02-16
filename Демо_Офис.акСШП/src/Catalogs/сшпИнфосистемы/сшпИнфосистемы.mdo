@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8a2b6fa-282b-4544-98e9-66a88eca8b00">
+  <producedTypes>
+    <objectType typeId="52626603-9236-4104-8c6f-7be48acf29f4" valueTypeId="2069f274-4e36-40d0-a9a8-62ce3af90f9b"/>
+    <refType typeId="9ac43de2-bd4f-4193-9ac8-7330e4e9bc67" valueTypeId="8842aff6-d771-47e1-b46e-136ead0e659c"/>
+    <selectionType typeId="7252af47-7f19-4783-9439-50650453317b" valueTypeId="b0a4f573-4867-496c-8536-3e804bf75a6f"/>
+    <listType typeId="338f4256-7fe2-4a08-88eb-44fd291f019c" valueTypeId="b1369cea-f237-44e9-a776-d6ba0a43b83a"/>
+    <managerType typeId="d8a65f4b-5ac2-49d7-a251-4d55b1325172" valueTypeId="1b11bc68-c41f-4494-8f92-c2f78b8b7e23"/>
+  </producedTypes>
+  <name>сшпИнфосистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инфосистемы</value>
+  </synonym>
+  <comment>Инфосистемы для отправки в них сообщений, получения от них собщений</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.сшпИнфосистемы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.сшпИнфосистемы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

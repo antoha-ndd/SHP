@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef716491-873a-4744-9fb9-128faf1bf234">
+  <producedTypes>
+    <managerType typeId="2c711277-f517-4978-be50-40077363e9e3" valueTypeId="6b6d676a-a8fd-467a-bb1f-110574fa93fd"/>
+    <valueManagerType typeId="c2b810ac-2cbc-4f01-92bc-ae27b5e209a8" valueTypeId="dc1aa7c6-003f-421c-8b77-a9bdf2c47099"/>
+    <valueKeyType typeId="0edbf7c7-85f7-4b0c-b9e4-2f418fe11bfc" valueTypeId="2012752d-6c88-47d9-9c77-7edf27d70474"/>
+  </producedTypes>
+  <name>сшпКодТекущейИнфосистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Код отправителя (текущей инфосистемы)</value>
+  </synonym>
+  <comment>Должен совпадать с кодом инфосистемы в 1С:Шина.</comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>50</length>
+    </stringQualifiers>
+  </type>
+  <minValue xsi:type="core:StringValue">
+    <value>1</value>
+  </minValue>
+  <maxValue xsi:type="core:StringValue">
+    <value>150</value>
+  </maxValue>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

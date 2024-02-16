@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:IntegrationService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5f0745e-ab39-4aea-81b4-f246635284c2">
+  <producedTypes>
+    <managerType typeId="a159a124-1224-4352-8b5c-6c4aab85f96c" valueTypeId="da0cc717-cab4-40f8-8eaa-4675da82ec84"/>
+  </producedTypes>
+  <name>сшпСервисИнтеграцииТест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сервис интеграции для отладки</value>
+  </synonym>
+  <externalIntegrationServiceAddress>http://127.0.0.1:9090/applications/sample02-dev</externalIntegrationServiceAddress>
+  <integrationServiceChannels uuid="95928bf1-61e9-4fed-b7d0-d3abcf091c66">
+    <producedTypes>
+      <managerType typeId="4211cbdf-22f1-435d-9466-788a1c9e4453" valueTypeId="522d2ea7-f97e-4ce7-8eba-0ce7c57037e6"/>
+    </producedTypes>
+    <name>Основной_Сеть_ИзОфисаВОфисПриемник</name>
+    <comment>Для теста самому себе</comment>
+    <externalIntegrationServiceChannelName>Основной::Сеть.ИзОфисаВОфисПриемник</externalIntegrationServiceChannelName>
+    <messageDirection>Receive</messageDirection>
+    <receiveMessageProcessing>Основной_Сеть_ИзОфисаВОфисПриемникОбработкаПолученияСообщения</receiveMessageProcessing>
+    <transactioned>true</transactioned>
+  </integrationServiceChannels>
+  <integrationServiceChannels uuid="173f963a-0b05-4f69-900a-1cb227bbc044">
+    <producedTypes>
+      <managerType typeId="5cb4cc0a-6caf-4f7d-808e-0095079f9911" valueTypeId="d8b2c88f-bea3-499d-b939-71b8f4289f33"/>
+    </producedTypes>
+    <name>Основной_Сеть_ИзОфисаВОфисИсточник</name>
+    <comment>Для теста самому себе</comment>
+    <externalIntegrationServiceChannelName>Основной::Сеть.ИзОфисаВОфисИсточник</externalIntegrationServiceChannelName>
+    <transactioned>true</transactioned>
+  </integrationServiceChannels>
+</mdclass:IntegrationService>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e490ea7a-36b8-4b83-b5fd-c265a35d4502">
+  <producedTypes>
+    <selectionType typeId="4425fbba-9283-41fe-ba3f-3a267aee8c5d" valueTypeId="698b83a1-8c01-4109-8cb1-3161bad51ad5"/>
+    <listType typeId="07df9dfd-9841-4ce3-bab2-48f5937d5cfc" valueTypeId="0367c7ee-4f13-4cea-bd39-d30ffc5b6b26"/>
+    <managerType typeId="a9c1cda1-7e82-4282-80c7-930c77c00d4b" valueTypeId="33aef1d5-3abe-49de-bac1-57da3e67fdbd"/>
+    <recordSetType typeId="f36dea73-4a42-4c9d-8d10-13952c95c599" valueTypeId="a127935e-64f8-4ddf-b858-c9911a1f3d38"/>
+    <recordKeyType typeId="7a29155b-dd57-45ea-839d-bfc7281cc4bd" valueTypeId="7787bcf2-a4a7-4a72-a9a9-9018e32e2d98"/>
+    <recordType typeId="bf13488f-8718-4b40-8e39-1b3abe621126" valueTypeId="25bf61ea-ad74-4707-ae61-e1b9e9da9800"/>
+    <recordManagerType typeId="5549dde2-3c2c-496c-a920-496a80d340fa" valueTypeId="fefb6467-b06c-4fb0-960b-4582b9f1e7d4"/>
+  </producedTypes>
+  <name>сшпИсходящиеСообщения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исходящие сообщения СШП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9e29960c-520e-4b66-869e-ad5a5d9e171e">
+    <name>Тело</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тело</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="a211c212-680f-4540-89b1-6bc8e23035b5">
+    <name>ТипСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип сообщения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.сшпТипЗапроса</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="58eb670c-aa39-46e7-b07d-b68e908b6268">
+    <name>Параметры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="0b8030a8-ca06-4497-a423-b328a1b5a49a">
+    <name>ИдентификаторОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор объекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="30ccf427-3f48-42d9-a8b6-8af164d6d78c">
+    <name>ИдентификаторСШП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор сообщения в СШП</value>
+    </synonym>
+    <comment>Идентификатор, который присваивается сообщению при его создании в сервисе интеграции.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Уникальный идентификатор сообщения в 1С: Шина.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="51565585-c3c4-4100-9893-3877a035618b">
+    <name>Класс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Класс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.сшпКлассыИнтеграции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="ce3fd56e-c3b2-44a3-b148-39f523a8330d">
+    <name>ИдентификаторСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор сообщения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>                                    </value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

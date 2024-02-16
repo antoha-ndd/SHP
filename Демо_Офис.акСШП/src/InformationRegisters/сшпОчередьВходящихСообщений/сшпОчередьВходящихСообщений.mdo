@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="107ede02-3387-4297-9ff4-ce7aab8693e3">
+  <producedTypes>
+    <selectionType typeId="f1385fee-305c-44a4-bcf2-2de06bac59f8" valueTypeId="1c0d113e-3799-42d2-bf23-7e3149d10767"/>
+    <listType typeId="54a3bce8-658e-40bc-8ccb-85154d873788" valueTypeId="eccc321a-d5d1-48ff-b283-bf995ef0ae28"/>
+    <managerType typeId="b25ed269-d468-4b1e-9f7d-92fc170de60e" valueTypeId="db193b2e-b281-419e-a95e-b51f5fd11006"/>
+    <recordSetType typeId="9ce2670e-aeb5-48e9-874e-d57a29c2b0d9" valueTypeId="1dd08f9d-e34f-4629-8635-801cf10d23e7"/>
+    <recordKeyType typeId="0d79093b-18df-4a8a-83cf-896031e16670" valueTypeId="04a9f8d0-78a5-4847-98cd-e3d0de19b899"/>
+    <recordType typeId="8a3beb7f-6313-4dc6-8610-5dce47884452" valueTypeId="9c9fc7d5-55bb-48bb-8333-bb2913c5dcf4"/>
+    <recordManagerType typeId="72f60d61-c5ae-49b0-8812-729104bf3d00" valueTypeId="05b95ac7-cfcf-46eb-b8bb-8eb364d03afc"/>
+  </producedTypes>
+  <name>сшпОчередьВходящихСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь входящих сообщений</value>
+  </synonym>
+  <comment>Очередь входящих сообщений</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Исходящее сообщение</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Очередь входящих сообщений</value>
+  </listPresentation>
+  <resources uuid="14cb99f7-9370-497d-a19d-10f7961f4e3f">
+    <name>Тело</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тело</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="e6bd505a-934a-4cd8-b28c-2e42d9ee38e3">
+    <name>СтатусСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус сообщения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.сшпСтатусыСообщений</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текущий статус сообщения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="5d661393-7f9f-4ed6-885a-1e96922da881">
+    <name>КоличествоПопыток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество попыток</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="096bb222-c3f1-4a9e-a404-78355861439d">
+    <name>ПоследняяОшибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Последняя ошибка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="75c9679b-4759-4834-9d5d-d4d867bb1043">
+    <name>ВРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <attributes uuid="a660c6da-ceef-4eed-bbd8-9fb60a314133">
+    <name>КодОтправителяВСШП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код отправителя в сообщении СШП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="49c04762-6715-4418-8c7a-5f8e2b22743e">
+    <name>КодПолучателяВСШП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код получателя в сообщении СШП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="3725e8c5-c69f-4325-ac10-5b27866a037e">
+    <name>ТипЗапросаВСШП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип запроса в параметрах сообщения СШП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="5e160b00-5506-498b-9d44-346841040f97">
+    <name>ДатаСозданияВОтправителе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата создания в отправителе, в параметрах сообщения СШП</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата, когда исходящее сообщение было зарегистрировано в очереди </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c71a11be-131f-42c0-8a35-d8227587eaaa">
+    <name>КлассВСШП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Класс в параметрах сообщения СШП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="89c09a2e-0348-4463-94f6-9a497fc2ac73">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка на объект обмена</value>
+    </synonym>
+    <comment>Планировалось использовать определяемый тип сшпОбъектыОбмена, но в версии платформы 8.3.23.1688 не доступен в расширении.</comment>
+    <type>
+      <types>CatalogRef.сшпСервисыИнтеграции</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на объект, который отправляем.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="90a66520-7ef2-4911-ab5f-57af1285f3d9">
+    <name>Класс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Класс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.сшпКлассыИнтеграции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4c5362d6-205e-42c9-bf23-b507b68639a5">
+    <name>ЭтоУдаление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это удаление</value>
+    </synonym>
+    <comment>(зарезервировано)</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="61dcefee-965c-45ef-a0ea-023a4bd9eec9">
+    <name>ДатаСоздания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата создания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата, когда исходящее сообщение было зарегистрировано в очереди </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3dc0b60d-8892-4792-89b0-56ddc5035dd7">
+    <name>ДатаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обработки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата, когда входящее сообщение было обработано в очереди, то есть выполнен обработчик и обработано тело сообщения. В случае успеха изменен статус на Обработано.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="b54936fa-c44e-4c92-bb5d-fe5f5a43db84">
+    <name>ИдентификаторСообщенияВСШП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор сообщения ВСШП</value>
+    </synonym>
+    <comment>Идентификатор, который присваивается сообщению при его создании в сервисе интеграции.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Уникальный идентификатор сообщения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

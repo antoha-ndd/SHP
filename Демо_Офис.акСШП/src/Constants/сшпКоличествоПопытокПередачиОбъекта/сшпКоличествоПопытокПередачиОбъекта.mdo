@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96f2228c-6880-430c-9a02-15e12d16ecae">
+  <producedTypes>
+    <managerType typeId="d8b1545b-ed42-446a-a84d-b7d114269bee" valueTypeId="48ef7909-9d27-4622-8ceb-097a2464417d"/>
+    <valueManagerType typeId="562bac8d-6f5e-4e9a-b7c5-e5a0bebf701f" valueTypeId="74acaad0-845b-47f4-9604-d3294504f4a7"/>
+    <valueKeyType typeId="6b7dbb7d-bece-43bd-817a-4da37a49a0c2" valueTypeId="b76b4012-f571-4eb0-bc1d-dd5a74baf7b0"/>
+  </producedTypes>
+  <name>сшпКоличествоПопытокПередачиОбъекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>(ЛК) Количество попыток передачи объекта в 1С:Документооборот</value>
+  </synonym>
+  <comment>// лк_VasilevskiyKG 05.02.2019</comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:StringValue">
+    <value>1</value>
+  </minValue>
+  <maxValue xsi:type="core:StringValue">
+    <value>150</value>
+  </maxValue>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
